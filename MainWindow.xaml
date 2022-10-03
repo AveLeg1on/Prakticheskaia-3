@@ -1,0 +1,27 @@
+﻿<Window x:Class="Z3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Z3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu >
+            <MenuItem Header="Выход"/>
+            <MenuItem Header="О программе" Click="FAQ"/>
+            <MenuItem Header="Открыть" Click="Open_Click"/>
+            <MenuItem Header="Сохранить" Click="Save_Click"/>
+            <MenuItem Header="Очистка" Click="Clear_Click"/>
+        </Menu>
+
+        <DataGrid x:Name="grider" Margin="0,23,0,267" CellEditEnding="Do1"/>
+        <TextBox Name="Txt_Column" HorizontalAlignment="Left" Margin="578,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Do"/>
+        <TextBox Name="Txt_Row" HorizontalAlignment="Left" Margin="578,249,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextChanged="Do"/>
+        <Label Content="Кол-во cтолбцов " HorizontalAlignment="Left" Margin="458,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.156"/>
+        <Label Content="Кол-во строк" HorizontalAlignment="Left" Margin="470,245,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.632,2.581"/>
+        <TextBox x:Name="Answer" HorizontalAlignment="Left" Margin="49,226,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ответ" HorizontalAlignment="Left" Margin="68,185,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.156"/>
+
+    </Grid>
+</Window>
